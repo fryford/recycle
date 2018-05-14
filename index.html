@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Recycling - what's the rate in your area?</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,bold" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+<style>
+
+body {
+	max-width: 800px;
+	margin:0px auto;	
+	font-family: 'Cabin Sketch', sans-serif;
+}
+
+#title {
+	font-size:40px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
+#dropdown {
+	margin-bottom: 20px;	
+}
+
+#info {
+	height:45px;
+	width:100%;
+	font-size:24px;
+}
+
+#label {
+	font-weight:bold;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: rgb(102,102,102);
+  shape-rendering: crispEdges;
+}
+
+.domain {
+	display:none;	
+}
+
+.axis text, #xaxislabel {
+  font-size:12px;
+  font-family: 'Cabin Sketch', sans-serif;
+  fill: rgb(102,102,102);
+}
+
+.cells path {
+  fill: none;
+  pointer-events: all;
+}
+
+.cellsselected {
+  opacity:0.75;
+  stroke-width: 2px;
+  stroke: #000;
+  fill:orange;
+}
+
+#source{
+	font-size: 14px;
+	font-weight: bold;
+	color: #414042;	
+}
+
+.key /* required */
+{
+	display: inline-block;
+	margin: 0 0 1em 0;
+	padding: 0;
+	line-height: 15px;
+}
+
+.key label {
+	white-space: nowrap;
+	font-size: 12px;
+	color: #333;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.key li/* required */
+{
+	display: inline-block;
+	margin: 0 18px 0 0;
+	padding: 0;
+	line-height: 15px;
+}
+
+.key b /* required */
+{
+	display: inline-block;
+	width: 35px;
+	height: 15px;
+	margin-right: 6px;
+	float: left;
+	background-color:none;
+	margin-top:8px;
+	border-radius:15px;
+}
+
+.legendBlocks{ /* new for Cluster chart */
+	width: 15px !important;
+	margin-top:0px !important;
+}
+
+.key label/* required */
+{
+	white-space: nowrap;
+	font-size: 12px;
+	color: #333;
+	font-weight: 400;
+}
+
+#wheely {
+	position:absolute;
+	margin:0px auto;	
+	top:163px;
+	z-index:-1;
+	transform: rotate(28deg);
+	
+}
+
+#share {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+	width:100%;
+	text-align:center;
+	color: #008080;
+}
+
+
+#sharebut {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+	width:100%;
+	text-align:center;
+	color: #008080;
+}
+
+#twit:hover {
+	background-color:#37C2F4;	
+}
+
+#face:hover {
+	background-color:#1B29DF;	
+}
+
+</style>
+
+<div id="title">
+RECYCLING - How well is your area doing?
+</div>
+<div id="dropdown">
+</div>
+<div id="legend">
+</div>
+<div id="info">
+</div>
+<div id="svgdiv">
+	<svg width="100%" height="370"></svg>
+</div>
+<div id="source"></div>
+<div id="wheely">
+	<img src="wheely.png" width="300"><img>
+</div>
+<div id="share">Share the recycling rate for your area</div>
+<div id="sharebut"></div>
+ 
+
+<script src="https://cdn.ons.gov.uk/vendor/d3/4.2.7/d3.min.js"></script>
+<script src="https://cdn.ons.gov.uk/vendor/pym/1.3.2/pym.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<script src="./lib/modernizr.svg.min.js"></script>
+
+
+
+
+<script>
+
+var pymChild = null;
+
+function drawGraphic() {
+	
+	console.log(d3.select("html").node().getBoundingClientRect().width);
+	pagewidth = d3.select("html").node().getBoundingClientRect().width
+	bodywidth = d3.select("body").node().getBoundingClientRect().width
+	
+	if(pagewidth > 800) {
+		leftmargin = ((pagewidth - 800)/2) -300 + 35;
+		console.log(((pagewidth - 800)/2)-300)
+		d3.select("#wheely").style("left", leftmargin + "px");
+	} else {
+	   leftmargin = ((pagewidth - bodywidth)/2) -300 + 35;
+	   d3.select("#wheely").remove();
+	}
+	
+	
+	
+	var svg = d3.select("svg"),
+		margin = {top: 10, right: 40, bottom: 40, left: 10},
+		
+		svgwidth =  parseInt(svg.style("width"));
+		
+		width = svgwidth - margin.left - margin.right,
+		height = svg.attr("height") - margin.top - margin.bottom;
+	
+	formatValue = d3.format(",d");
+	
+	var x = d3.scaleLinear()
+		.rangeRound([0, width]);
+		
+	
+	
+	if(dvc.essential.xAxisScale == "auto") {
+	  x.domain(d3.extent(graphic_data, function(d) { return d.value; }));
+	} else {
+	  x.domain(dvc.essential.xAxisScale);
+	}
+	
+	//add centreline
+	  svg.append("line")
+	  	.attr("x1",x(45.2)+0.5)
+		.attr("x2",x(45.2)+0.5)
+		.attr("y1",320)
+		.attr("y2",0)
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.attr("stroke","rgb(102,102,102)");
+	
+	//add left/right labels
+	  svg.append("text")
+	  	.attr("x",x(45.2)+10)
+		.attr("y",20)
+		.attr("font-size","14px")
+		.attr("fill","#333")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.html("&#x25b6; Recycles more than UK average")
+		
+	  svg.append("text")
+	  	.attr("x",x(45.2)-10)
+		.attr("y",20)
+		.attr("font-size","14px")
+		.attr("fill","#333")
+		.attr("text-anchor","end")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+		.html("Recycles less than UK average &#x25c0;")
+	
+	
+	  var g = svg.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	  var simulation = d3.forceSimulation(graphic_data)
+		  .force("x", d3.forceX(function(d) { return x(d.value); }).strength(2))
+		  .force("y", d3.forceY(height / 2))
+		  .force("collide", d3.forceCollide(6))
+		  .stop();
+	
+	  for (var i = 0; i < 120; ++i) simulation.tick();
+	
+	  if(svgwidth < dvc.optional.mobileBreakpoint) {
+		  numberticks = dvc.optional.x_num_ticks_sm_md[0];
+	  } else {
+		  numberticks = dvc.optional.x_num_ticks_sm_md[1];
+	  }
+		
+	  g.append("g")
+		  .attr("class", "axis axis--x")
+		  .attr("transform", "translate(0," + height + ")")
+		  .call(d3.axisBottom(x).ticks(numberticks, ".0s"));
+	
+	
+
+	
+	
+	  var cell = g.append("g")
+		  .attr("class", "cells")
+		.selectAll("g").data(d3.voronoi()
+			.extent([[-margin.left, -margin.top], [width + margin.right, height + margin.top]])
+			.x(function(d) { return d.x; })
+			.y(function(d) { return d.y; })
+		  .polygons(graphic_data)).enter().append("g").attr("class","polygons");
+	
+	  cell.append("circle")
+		  .attr("r", 5)
+		  .attr("cx", function(d) { return d.data.x; })
+		  .attr("cy", function(d) { return d.data.y; })
+		  .attr("class", "cell")
+		  .attr("id", function(d) {return "id" + d.data.id + "cell"})
+		  .attr("fill",function(d){return  dvc.essential.colour_palette[0]});
+	
+	  cell.append("path")
+		  .attr("d", function(d) { return "M" + d.join("L") + "Z"; })
+		  .on("mouseover", function(d) {
+			  changetext(d.data.value, d.data.unique)
+			  
+			  $("#areaselect").val("id" + d.data.id).trigger('change.select2');
+			  d3.select("#id" + d.data.id + "cell").classed("cellsselected",true)
+		  })
+		  .on("mouseout", function(d) {
+			  d3.select("#info").html("");
+			  $("#areaselect").val(null).trigger('change.select2');
+			  d3.select("#id" + d.data.id + "cell").classed("cellsselected",false)
+		  });
+		  
+	//add xaxislabel
+	  svg.append("g")
+	  	.attr("transform", "translate(" + (svgwidth - margin.right + margin.left) +"," + (height+margin.top + margin.bottom -4) + ")")
+		.append("text")
+		.attr("id","xaxislabel")
+		.attr("text-anchor", "end")
+		.text(dvc.essential.xAxisLabel);
+		
+		
+	selectlist(graphic_data);
+	
+	
+	// add share icons
+	
+	d3.select("#sharebut")
+		.append("a")
+		.attr("id","face")
+		.attr("href","https://www.facebook.com/sharer/sharer.php?u=" + document.URL)
+		.attr("target","_blank")
+		.append("img")
+		.attr("src","face.png")
+		.attr("width","40px")
+		.attr("height","40px")
+		.style("padding-right","7px");
+		
+				
+	d3.select("#sharebut")
+		.append("a")
+		.attr("id","twit")
+		.attr("href","https://twitter.com/intent/tweet?text=Whats the recycling rate in your area? " + document.URL)
+		.attr("target","_blank")
+		.append("img")
+		.attr("src","twit.png")
+		.attr("width","40px")
+		.attr("height","40px")
+		.style("padding-left","7px");;
+	  
+	
+		
+	//add source
+	  d3.select("#source").text("Source: " + dvc.essential.sourceText);
+	  
+	if (pymChild) {
+		pymChild.sendHeight();
+	}
+  
+}
+
+function changetext(value,id) {
+	if(value < 25) {
+		d3.select("#info").html("<span id='label'>" + formatValue(value) + "% recycled</span> - get your act together " + id);
+		
+		d3.select("#twit").attr("href","https://twitter.com/intent/tweet?text=" + formatValue(value) + "%25 recycled in " + id + " - we need to get our act together - but how is your area doing? - " + document.URL);	
+	} else if (value < 45) {
+		d3.select("#info").html("<span id='label'>" + formatValue(value) + "% recycled</span> - could do better " + id);
+		
+		d3.select("#twit").attr("href","https://twitter.com/intent/tweet?text=" + formatValue(value) + "%25 recycled in " + id + " - we could do better - but how is your area doing? - " + document.URL);		
+	} else if (value < 55) {
+		d3.select("#info").html("<span id='label'>" + formatValue(value) + "% recycled</span> - you're doing alright " + id);	
+		
+		d3.select("#twit").attr("href","https://twitter.com/intent/tweet?text=" + formatValue(value) + "%25 recycled in " + id + " - we're doing alright - but how is your area doing? - " + document.URL);	
+	} else if (value > 55) {
+		d3.select("#info").html("<span id='label'>" + formatValue(value) + "% recycled</span> - top work " + id);	
+		
+		d3.select("#twit").attr("href","https://twitter.com/intent/tweet?text=" + formatValue(value) + "%25 recycled in " + id + " - great stuff - but how is your area doing? - " + document.URL);	
+	}
+	
+
+	
+	
+	d3.select("#face").attr("href","https://www.facebook.com/sharer/sharer.php?u=" + document.URL);
+
+}
+
+		function selectlist(datacsv) {
+
+			var areacodes =  datacsv.map(function(d) { return "id" + d.id; });
+			var areanames =  datacsv.map(function(d) { return d.unique; });
+			var menuarea = d3.zip(areanames,areacodes).sort(function(a, b){ return d3.ascending(a[0], b[0]); });
+
+			menuarea.shift();
+			menuarea.shift();
+
+			// Build option menu for occupations
+			var optns = d3.select("#dropdown").append("div").attr("id","sel").append("select")
+				.attr("id","areaselect")
+				.attr("style","width:300px")
+				.attr("class","chosen-select");
+
+			optns.append("option")
+				// .attr("value","first")
+				// .text("");
+
+			optns.selectAll("p").data(menuarea).enter().append("option")
+				.attr("value", function(d){ return d[1]})
+				.attr("id",function(d){return d[1]})
+				.text(function(d){ return d[0]});
+
+			myId=null;
+
+			 $('#areaselect').select2({placeholder:"Select an area",allowClear:true,dropdownParent:$('#sel')})
+
+			 $('#areaselect').on('input',function(){console.log("click")})
+
+			$('#areaselect').on('change',function(){
+
+					if($('#areaselect').val() != "") {
+					//if(typeof params != 'undefined') {
+						
+							d3.selectAll(".cell").classed("cellsselected", false);
+
+							//d3.select("#map").node().focus();
+							d3.selectAll(".cells path").style("pointer-events","none")
+							
+							areacode = $('#areaselect').val();
+							
+							d3.select("#" + areacode + "cell").classed("cellsselected", true);
+							datafilter = datacsv.filter(function(d) {return "id" + d.id == areacode})
+							
+							changetext(datafilter[0].value,datafilter[0].unique )
+							
+
+
+					}
+					else {
+						d3.selectAll(".cell").classed("cellsselected", false);
+						d3.selectAll(".cells path").style("pointer-events","all")	
+							//enableMouseEvents();
+							//resetDot();
+
+					}
+
+			});
+
+	};
+
+	
+
+
+if (Modernizr.svg) {
+	//load config 
+	d3.json("config.json", function(error, config) {
+	dvc=config
+	
+		//load chart data
+		d3.csv(dvc.essential.graphic_data_url, function(error, data) {
+			graphic_data = data;
+			
+			//use pym to create iframed chart dependent on specified variables
+			pymChild = new pym.Child({ renderCallback: drawGraphic});
+		});
+	})
+} else {
+	 //use pym to create iframe containing fallback image (which is set as default)
+	pymChild = new pym.Child();
+	if (pymChild) {
+		pymChild.sendHeight();
+	}
+}
+
+
+
+
+
+
+function type(d) {
+  if (!d.value) return;
+  d.value = +d.value;
+  return d;
+}
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89363704-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89363704-1');
+</script>
+
