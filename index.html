@@ -52,6 +52,15 @@ body {
 	font-size:24px;
 }
 
+@media (max-width: 600px) {
+	#info {
+		height:45px;
+		width:100%;
+		font-size:18px;
+	}
+	
+}
+
 #label {
 	font-weight:bold;
 }
@@ -214,13 +223,13 @@ var pymChild = null;
 
 function drawGraphic() {
 	
-	console.log(d3.select("html").node().getBoundingClientRect().width);
+	clicked = false;
+	
 	pagewidth = d3.select("html").node().getBoundingClientRect().width
 	bodywidth = d3.select("body").node().getBoundingClientRect().width
 	
 	if(pagewidth > 800) {
 		leftmargin = ((pagewidth - 800)/2) -300 + 35;
-		console.log(((pagewidth - 800)/2)-300)
 		d3.select("#wheely").style("left", leftmargin + "px");
 	} else {
 	   leftmargin = ((pagewidth - bodywidth)/2) -300 + 35;
@@ -328,11 +337,27 @@ function drawGraphic() {
 			  $("#areaselect").val("id" + d.data.id).trigger('change.select2');
 			  d3.select("#id" + d.data.id + "cell").classed("cellsselected",true)
 		  })
+		  .on("click", function(d) {
+			  
+				d3.selectAll(".cells path").style("pointer-events","none");
+				clicked = true;
+				
+							
+		  })
 		  .on("mouseout", function(d) {
 			  d3.select("#info").html("");
 			  $("#areaselect").val(null).trigger('change.select2');
 			  d3.select("#id" + d.data.id + "cell").classed("cellsselected",false)
-		  });
+			  
+			  if(clicked == true) {
+				 changetext(d.data.value, d.data.unique)
+			  
+				  $("#areaselect").val("id" + d.data.id).trigger('change.select2');
+				  d3.select("#id" + d.data.id + "cell").classed("cellsselected",true); 
+				  
+			  }
+		  })
+		  
 		  
 	//add xaxislabel
 	  svg.append("g")
@@ -436,7 +461,7 @@ function changetext(value,id) {
 
 			 $('#areaselect').select2({placeholder:"Select an area",allowClear:true,dropdownParent:$('#sel')})
 
-			 $('#areaselect').on('input',function(){console.log("click")})
+			 $('#areaselect').on('input',function(){})
 
 			$('#areaselect').on('change',function(){
 
@@ -459,8 +484,13 @@ function changetext(value,id) {
 
 					}
 					else {
+						
+						clicked = false;
+						
 						d3.selectAll(".cell").classed("cellsselected", false);
-						d3.selectAll(".cells path").style("pointer-events","all")	
+						d3.selectAll(".cells path").style("pointer-events","all");
+						
+							
 							//enableMouseEvents();
 							//resetDot();
 
