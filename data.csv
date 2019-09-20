@@ -1,1 +1,411 @@
-id,unique,value1,East Riding of Yorkshire Council,65.42,Rochford District Council,63.93,South Oxfordshire District Council,63.84,West Oxfordshire District Council,63.45,Vale of White Horse District Council,62.56,Surrey Heath Borough Council,62.37,Three Rivers District Council,61.98,South Northamptonshire District Council,61.49,Trafford MBC,61.310,Stratford-on-Avon District Council,61.311,Derbyshire Dales District Council,59.812,Guildford Borough Council,59.713,Cotswold District Council,59.614,Woking Borough Council,59.415,Dorset Waste Partnership,59.416,Rutland County Council,59.317,Stockport MBC,5918,North Hertfordshire District Council,58.919,Mole Valley District Council,58.220,Cheshire West and Chester,5821,Maldon District Council,5822,Epping Forest Borough Council,57.723,Oxfordshire County Council,57.724,Tandridge District Council,57.725,Surrey County Council,57.726,St Albans City and District Council,57.527,Staffordshire Moorlands District Council,57.428,Suffolk Coastal District Council,57.429,Cherwell District Council,56.530,North Somerset Council,56.331,Teignbridge District Council,55.732,Devon County Council,55.733,Buckinghamshire County Council,55.434,Cheshire East,55.235,Ashford Borough Council,5536,Reigate and Banstead Borough Council,5537,Elmbridge Borough Council,5538,Shropshire,54.839,Warwick District Council,54.740,South Hams District Council,54.741,Warwickshire County Council,54.442,Warrington Borough Council,54.343,Bath and North East Somerset Council,54.144,Cambridgeshire County Council,53.845,West Devon Borough Council,53.846,Harborough District Council,53.647,Mid Devon District Council,53.448,Tewkesbury Borough Council,53.349,Welwyn Hatfield Council,5350,Essex County Council,52.951,Tameside MBC,52.852,Bury MBC,52.753,Bexley LB,52.754,Somerset County Council,52.755,East Cambridgeshire District Council,52.456,Lichfield District Council,52.357,Hertfordshire County Council,52.258,Forest of Dean District Council,52.259,Gloucestershire County Council,5260,Stafford Borough Council,51.961,South Staffordshire Council,51.962,Wealden District Council,51.963,Hambleton District Council,51.864,Daventry District Council,51.865,West Berkshire District Council,51.866,Uttlesford District Council,51.567,Wycombe District Councilæb,51.368,South Bucks District Council,51.369,Waverley Borough Council,51.370,East Hertfordshire District Council,51.271,Dacorum Borough Council,51.172,Broadland District Council,50.973,Huntingdonshire District Council,50.874,Ealing LB,50.775,Milton Keynes Council,50.676,Fylde Borough Council,50.577,West Somerset District Council,50.578,Rushcliffe Borough Council,50.479,Aylesbury Vale District Council,50.380,Northamptonshire County Council,50.281,Rugby Borough Council,50.182,Suffolk County Council,50.183,Maidstone Borough Council,49.984,Kettering Borough Council,49.885,Calderdale MBC,49.786,Leicestershire County Council,49.787,Braintree District Council,49.788,Kingston-upon-Hull City Council,49.589,Basildon District Council,49.590,Poole Borough Council,49.591,Hinckley and Bosworth Borough Council,49.492,East Staffordshire Borough Council,49.393,Staffordshire County Council,49.294,South Gloucestershire Council,49.295,Tunbridge Wells Borough Council,49.196,Oxford City Council,4997,West Lindsey District Council,48.998,Castle Point Borough Council,48.999,Bournemouth Borough Council,48.8100,Newcastle-under-Lyme Borough Council,48.6101,Barnsley MBC,48.5102,Charnwood Borough Council,48.4103,Derbyshire County Council,48.3104,Oadby and Wigston Borough Council,48.3105,Rother District Council,48.3106,Taunton Deane Borough Council,48.3107,South Derbyshire District Council,48.2108,High Peak Borough Council,48.1109,Blaby District Council,47.9110,North Lincolnshire Council,47.8111,Melton Borough Council,47.7112,Wakefield City MDC,47.5113,South Ribble Borough Council,47.4114,Windsor and Maidenhead Borough Council,47.4115,Cheltenham Borough Council,47.3116,Rochdale MBC,47.2117,Chorley Borough Council,47.2118,West Lancashire Borough Council,47.1119,Doncaster MBC,47120,Chelmsford Borough Council,47121,Royal Borough of Kingston upon Thames,47122,Bromley LB,46.9123,Epsom and Ewell Borough Council,46.8124,Sedgemoor District Council,46.8125,Greater Manchester WDA (MBC),46.7126,North Yorkshire County Council,46.7127,North West Leicestershire District Council,46.7128,Lincolnshire County Council,46.7129,Norfolk County Council,46.7130,Isle of Wight Council,46.5131,Ryedale District Council,46.4132,North East Derbyshire District Council,46.3133,Fenland District Council,46.3134,Kent County Council,46.3135,East Northamptonshire Council,46.2136,North Warwickshire Borough Council,46.2137,Central Bedfordshire,46.2138,South Somerset District Council,46.2139,North Kesteven District Council,46.1140,Cambridge City and South Cambs Councilsæc,46.1141,East Devon District Council,46.1142,Chesterfield Borough Council,46143,Southend-on-Sea Borough Council,46144,Spelthorne Borough Council,46145,Telford and Wrekin Council,45.8146,Tamworth Borough Council,45.8147,Colchester Borough Council,45.8148,Kings Lynn and West Norfolk Borough Council,45.7149,Lancashire County Council,45.6150,Stroud District Council,45.5151,East Lindsey District Council,45.4152,Cannock Chase Council,45.4153,Brentwood Borough Council,45.2154,Salford City Council MBC,44.9155,Wyre Borough Council,44.9156,South Norfolk Council,44.9157,Bromsgrove District Council,44.7158,Dover District Council,44.7159,Cumbria County Council,44.5160,Horsham District Council,44.5161,North Devon District Council,44.5162,Bolton MBC,44.4163,Canterbury City Council,44.4164,West Sussex County Council,44.3165,Nottinghamshire County Council,44.2166,Wychavon District Council,44.2167,Runnymede Borough Council,44.1168,Harlow District Council,43.9169,Nuneaton and Bedworth Borough Council,43.8170,Mid Suffolk District Councilæ,43.8171,Wigan MBC,43.7172,Halton Borough Council,43.6173,East Sussex County Council,43.6174,Hertsmere Borough Council,43.4175,Hillingdon LB,43.4176,Bristol City Council,43.4177,Mendip District Council,43.4178,St Edmundsbury Borough Council,43.3179,South Kesteven District Council,43.2180,Wiltshire,43.1181,Eden District Council,42.9182,Watford Borough Council,42.9183,Medway Borough Council,42.8184,Erewash Borough Council,42.7185,Wellingborough Borough Council,42.7186,Worcestershire County Council,42.7187,Redcar and Cleveland Borough Council,42.6188,Selby District Council,42.6189,Craven District Council,42.6190,Corby Borough Council,42.6191,York City Council,42.5192,Tonbridge and Malling Borough Council,42.5193,Shepway District Council,42.5194,South Lakeland District Council,42.4195,Solihull MBC,42.4196,Waveney District Council,42.4197,Richmond upon Thames LB,42.4198,Newcastle-upon-Tyne City Council MBC,42.3199,Torridge District Council,42.2200,Rotherham MBC,42.1201,Bolsover District Council,42.1202,Wolverhampton MBC,42203,Peterborough City Council,41.9204,North Norfolk District Council,41.9205,Hampshire County Council,41.6206,Swale Borough Council,41.6207,Northampton Borough Council,41.5208,Torbay Council,41.5209,Richmondshire District Council,41.3210,Walsall MBC,41.3211,Herefordshire Council,41.2212,Merseyside WDA (MBC),41.1213,Broxbourne Borough Council,41.1214,Chichester District Council,41.1215,Carlisle City Council,41216,Ashfield District Council,41217,Sandwell MBC,41218,Leicester City Council,40.7219,Bedford,40.7220,Eastleigh Borough Council,40.7221,Breckland Council,40.3222,Bracknell Forest Borough Council,40.1223,Ipswich Borough Council,40224,Scarborough Borough Council,39.9225,Broxtowe Borough Council,39.9226,Stevenage Borough Council,39.8227,Oldham MBC,39.7228,Harrow LB,39.7229,Gloucester City Council,39.7230,Mid Sussex District Council,39.6231,County Durham,39.5232,West London Waste Authority,39.1233,Lancaster City Council,38.9234,St Helens MBC,38.9235,Harrogate Borough Council,38.9236,Wokingham Council,38.9237,Arun District Council,38.9238,Croydon LB,38.6239,Swindon Borough Council,38.4240,Norwich City Council,38.3241,Hart District Council,38.3242,Sevenoaks District Council,38.3243,Allerdale Borough Council,37.9244,Leeds City Council MBC,37.9245,Sefton MBC,37.8246,Northumberland,37.7247,Malvern Hills District Council,37.7248,Boston Borough Council,37.6249,Forest Heath District Council,37.5250,Darlington Borough Council,37.4251,Barnet LB,37.4252,Dudley MBC,37.3253,Havering LB,37.3254,Enfield LB,37.2255,Thurrock Council,37.1256,Eastbourne Borough Council,37.1257,Ribble Valley Borough Council,37258,Bradford City MDC (MBC),37259,Blackburn with Darwen Borough Council,36.7260,Gedling Borough Council,36.7261,Worcester City Council,36.7262,Sutton LB,36.5263,Brent LB,36.4264,Lincoln City Council,36.2265,Manchester City Council MBC,36266,Wirral MBC,35.9267,Haringey LB,35.7268,Merton LB,35.7269,Burnley Borough Council,35.5270,Derby City Council,35.3271,Worthing Borough Council,35.3272,North Tyneside Council,35.2273,Greenwich LB,34.9274,Stoke-on-Trent City Council,34.8275,South Tyneside MBC,34.7276,Mansfield District Council,34.6277,Cornwall,34.6278,Rossendale Borough Council,34.5279,Gravesham Borough Council,34.5280,Waltham Forest LB,34.4281,Gateshead MBC,34.2282,Winchester City Council,34.2283,Pendle Borough Council,34.1284,Southwark LB,34285,Luton Borough Council,33.8286,East Hampshire District Council,33.8287,Thanet District Council,33.8288,Middlesbrough Borough Council,33.7289,Blackpool Borough Council,33.5290,Great Yarmouth Borough Council,33.3291,Fareham Borough Council,33.2292,Hartlepool Borough Council,33.1293,Test Valley Borough Council,33294,Hyndburn Borough Council,32.9295,Knowsley MBC,32.8296,Wyre Forest District Council,32.8297,Adur District Council,32.7298,Copeland Borough Council,32.5299,Amber Valley Borough Council,32.2300,North London Waste Authority,32.2301,Reading Borough Council,32.1302,Plymouth City Council,32303,Newark and Sherwood District Council,31.9304,Islington LB,31.6305,Exeter City Council,31.6306,Preston City Council,31.4307,Redditch Borough Council,31308,New Forest District Council,31309,Hastings Borough Council,30.3310,Kirklees MBC,30.1311,Hounslow LB,30.1312,Coventry City Council,29.9313,Nottingham City Council,29.8314,Sheffield City Council,29.6315,Havant Borough Council,29.5316,Barrow-in-Furness Borough Council,29.3317,North East Lincolnshire Council,28.9318,Lambeth LB,28.8319,City of London,28.5320,South Holland District Council,28.3321,Southampton City Council,28.2322,Liverpool City Council,28.1323,Tower Hamlets LB,27.6324,Crawley Borough Council,27.4325,Hackney LB,27326,Brighton and Hove Council,27327,Tendring District Council,26.8328,Redbridge LB,26.7329,Camden LB,26.6330,Rushmoor Borough Council,26.6331,Sunderland City Council,26.5332,Slough Borough Council,26.3333,Basingstoke and Deane Borough Council,26.3334,Stockton-on-Tees Borough Council,25.8335,East London Waste Authority,25.8336,Royal Borough of Kensington and Chelsea,25.7337,Barking and Dagenham LB,25.3338,Dartford Borough Council,25.2339,Lewes District Council,25.1340,Portsmouth City Council,24.7341,Birmingham City Council,24.4342,Western Riverside Waste Authority,23.7343,Hammersmith and Fulham LB,23.2344,Gosport Borough Council,22345,Wandsworth LB,21.9346,Bassetlaw District Council,21.1347,Council of the Isles of Scilly,19.5348,Lewisham LB,17.7349,Westminster City Council,17.4350,Newham LB,14.1351,Gwynedd,61.1352,Conwy,62.6353,Denbighshire,64.7354,Flintshire,68.2355,Wrexham,68.7356,Powys,65.2357,Ceredigion,70.1358,Pembrokeshire,65.3359,Carmarthenshire,66.2360,Swansea,63.7361,Neath Port Talbot,62.8362,Bridgend,57.9363,Vale of Glamorgan,65.3364,Cardiff,58.1365,Rhondda Cynon Taf,64.4366,Merthyr Tydfil,65.2367,Caerphilly,65.5368,Blaenau Gwent,56.8369,Torfaen,63.6370,Monmouthshire,68.7371,Newport,61.4372,Aberdeen City,39373,Aberdeenshire,43.5374,Angus,56.7375,Argyll and Bute,33.9376,City of Edinburgh,44.6377,Clackmannanshire,56.5378,Dumfries and Galloway,26.7379,Dundee City,33.6380,East Ayrshire,53.3381,East Dunbartonshire,48.5382,East Lothian,51.8383,East Renfrewshire,60.8384,Falkirk,51.3385,Fife,54.7386,Glasgow City,25.2387,Highland,44.5388,Inverclyde,53.4389,Midlothian,53.5390,Moray,59.1391,Na h-Eileanan Siar,24.1392,North Ayrshire,55.3393,North Lanarkshire,41.1394,Orkney Islands ,19.4395,Perth and Kinross,54.7396,Renfrewshire,48.5397,Scottish Borders,39398,Shetland Islands,7.9399,South Ayrshire,49.9400,South Lanarkshire,53401,Stirling,54.7402,West Dunbartonshire,48.5403,West Lothian,48.5404,Antrim & Newtownabbey,47.53986638405,Ards & North Down,49.19452112406,"Armagh City, Banbridge & Craigavon",48.82947041407,Belfast,39.37174333408,Causeway Coast & Glens,42.28042112409,Derry City & Strabane,40.54714393410,Fermanagh & Omagh,45.30339616411,Lisburn & Castlereagh,41.07612788412,Mid & East Antrim,45.31801651413,Mid Ulster,51.56330744414,"Newry, Mourne & Down",40.1455772
+id,unique,value
+1,Redbridge LB,23.9
+2,South Tyneside MBC,28.9
+3,Bridgend,68.6
+4,South Bucks District Council,51.9
+5,Chesterfield Borough Council,46.3
+6,Dudley MBC,35.5
+7,Colchester Borough Council,54.8
+8,Copeland Borough Council,32.8
+9,Corby Borough Council,44.6
+10,Suffolk County Council,48
+11,Thurrock Council,36
+12,Carmarthenshire,63.6
+13,Bolsover District Council,40.3
+14,South Lanarkshire,47.3
+15,Malvern Hills District Council,37.2
+16,Conwy,63.7
+17,Tendring District Council,27
+18,Vale of White Horse District Council,60.4
+19,Richmond upon Thames LB,41.9
+20,Reading Borough Council,30.7
+21,Torridge District Council,41.2
+22,Nuneaton and Bedworth Borough Council,42.9
+23,Islington LB,29.5
+24,Na h-Eileanan Siar,23.9
+25,South Northamptonshire District Council,60.5
+26,Rochdale MBC,47.9
+27,Angus,55.2
+28,Hammersmith and Fulham LB,23.7
+29,Sevenoaks District Council,38.1
+30,Gravesham Borough Council,40.7
+31,Calderdale MBC,48
+32,North Devon District Council,45.5
+33,Hart District Council,41.6
+34,Fylde Borough Council,47.5
+35,Ipswich Borough Council,38
+36,Exeter City Council,30.8
+37,Gloucester City Council,41.9
+38,High Peak Borough Council,47.7
+39,North Warwickshire Borough Council,45.4
+40,Pendle Borough Council,31.9
+41,Isle of Anglesey,72.2
+42,Brentwood Borough Council,44.4
+43,Plymouth City Council,33.7
+44,North London Waste Authority,31.2
+45,Vale of Glamorgan,63.2
+46,Ribble Valley Borough Council,30.8
+47,Broxbourne Borough Council,41.8
+48,Thanet District Council,34.9
+49,Canterbury City Council,43.5
+50,Bromley LB,50
+51,Melton Borough Council,46
+52,East Sussex County Council,42.8
+53,Royal Borough of Kingston upon Thames,48.3
+54,Erewash Borough Council,42.3
+55,Waveney District Council,40
+56,Mole Valley District Council,57.9
+57,Newham LB,14.1
+58,South Gloucestershire Council,51.6
+59,Ashford Borough Council,56.6
+60,Ceredigion,63.7
+61,Peterborough City Council,43.3
+62,Denbighshire,64.2
+63,Harrogate Borough Council,39.6
+64,Enfield LB,35.9
+65,Essex County Council,52.8
+66,Rushmoor Borough Council,29
+67,Dundee City,35.5
+68,North Norfolk District Council,41.6
+69,Windsor and Maidenhead Borough Council,44.8
+70,New Forest District Council,34.1
+71,Lichfield District Council,50.4
+72,Crawley Borough Council,28.4
+73,Monmouthshire,65.8
+74,Causeway Coast & Glens,40.50403708
+75,Basingstoke and Deane Borough Council,28.6
+76,Inverclyde,57.2
+77,Redcar and Cleveland Borough Council,39.9
+78,Forest Heath District Council,34.7
+79,Hounslow LB,29.8
+80,Midlothian,51.6
+81,Bournemouth Borough Council,52.3
+82,Highland,43.6
+83,Fenland District Council,38.8
+84,Arun District Council,40.6
+85,Dacorum Borough Council,52.5
+86,Gwynedd,60.3
+87,Knowsley MBC,30.2
+88,Stafford Borough Council,50
+89,Derby City Council,36.3
+90,Sunderland City Council,27.1
+91,Hartlepool Borough Council,33.2
+92,Lewisham LB,21.8
+93,Broadland District Council,50
+94,East Riding of Yorkshire Council,64.5
+95,Cheshire East,54.4
+96,Bath and North East Somerset Council,54.8
+97,Charnwood Borough Council,45.5
+98,Southwark LB,34.7
+99,South Derbyshire District Council,45.8
+100,Fareham Borough Council,34
+101,Council of the Isles of Scilly,21.2
+102,Rossendale Borough Council,34.1
+103,North Hertfordshire District Council,57.5
+104,Derbyshire Dales District Council,60.3
+105,Ealing LB,48.8
+106,Oldham MBC,42.1
+107,North Lanarkshire,39.6
+108,Newcastle-upon-Tyne City Council MBC,38
+109,East Lothian,53.1
+110,Scottish Borders,39.9
+111,Cardiff,58.3
+112,Stirling,55.1
+113,Breckland Council,40.1
+114,Liverpool City Council,26.6
+115,Waltham Forest LB,32.5
+116,Leeds City Council MBC,38.4
+117,Kent County Council,46.7
+118,Barnet LB,36.9
+119,Burnley Borough Council,32.8
+120,Cotswold District Council,58.7
+121,Warrington Borough Council,42.8
+122,Newark and Sherwood District Council,31.9
+123,West London Waste Authority,38
+124,Kings Lynn and West Norfolk Borough Council,46.4
+125,Sandwell MBC,39.9
+126,City of London,29.2
+127,Cherwell District Council,55.6
+128,Watford Borough Council,44.3
+129,Castle Point Borough Council,48.6
+130,Newcastle-under-Lyme Borough Council,47
+131,Barnsley MBC,47.7
+132,Hinckley and Bosworth Borough Council,43.9
+133,Doncaster MBC,45.8
+134,Rotherham MBC,43.6
+135,Mansfield District Council,32.6
+136,Neath Port Talbot,60.5
+137,Norwich City Council,37.7
+138,Stoke-on-Trent City Council,34.9
+139,East Cambridgeshire District Council,56.2
+140,Ards & North Down,49.61720783
+141,Cannock Chase Council,44.4
+142,Cambridgeshire County Council,54.8
+143,Cumbria County Council,44.3
+144,St Albans City and District Council,59.5
+145,Oxford City Council,50.8
+146,Cheltenham Borough Council,48.5
+147,Maldon District Council,59.3
+148,Teignbridge District Council,55.4
+149,Halton Borough Council,43.5
+150,Gosport Borough Council,23
+151,Solihull MBC,40.6
+152,East Dunbartonshire,47.9
+153,Tower Hamlets LB,26.4
+154,Southampton City Council,29.5
+155,Basildon District Council,48.4
+156,Manchester City Council MBC,38.6
+157,Chichester District Council,44.6
+158,Swindon Borough Council,39.3
+159,Merseyside WDA (MBC),38.9
+160,Blaby District Council,42.4
+161,Suffolk Coastal District Council,54
+162,Rother District Council,50.2
+163,Blackpool Borough Council,35.8
+164,West Devon Borough Council,51.2
+165,Redditch Borough Council,29.7
+166,Brighton and Hove Council,28.6
+167,Dover District Council,47.3
+168,Wycombe District Council,52.1
+169,Wellingborough Borough Council,41.4
+170,West Oxfordshire District Council,59.6
+171,"Armagh City, Banbridge & Craigavon",48.2871843
+172,Scarborough Borough Council,37
+173,Tameside MBC,52.4
+174,Tonbridge and Malling Borough Council,41.7
+175,Luton Borough Council,33.2
+176,Lambeth LB,29.8
+177,Dartford Borough Council,25.2
+178,Belfast,41.25507524
+179,Camden LB,30.3
+180,Wokingham Council,38.9
+181,Bexley LB,52.1
+182,Gateshead MBC,32.8
+183,Gloucestershire County Council,54.2
+184,Orkney Islands,18.3
+185,Hackney LB,27.4
+186,Tandridge District Council,58.4
+187,North Tyneside Council,33.4
+188,Clackmannanshire,59.5
+189,Hyndburn Borough Council,33.3
+190,Renfrewshire,47.8
+191,South Norfolk Council,42.9
+192,Pembrokeshire,57
+193,Lancashire County Council,42.1
+194,Staffordshire County Council,47.5
+195,Aberdeenshire,43.7
+196,South Hams District Council,53.9
+197,Spelthorne Borough Council,46.4
+198,Mid Suffolk District Council,42.2
+199,Lisburn & Castlereagh,44.4931085
+200,Trafford MBC,58.5
+201,Stockport MBC,57.5
+202,Leicestershire County Council,45.8
+203,Caerphilly,66.7
+204,Perth and Kinross,55.6
+205,North Ayrshire,55.8
+206,South Oxfordshire District Council,63
+207,Rochford District Council,63
+208,Great Yarmouth Borough Council,31.9
+209,York City Council,44.9
+210,Darlington Borough Council,40.6
+211,South Lakeland District Council,44.4
+212,Wyre Borough Council,42.9
+213,Cambridge City and South Cambs Councils,48.5
+214,Milton Keynes Council,51.7
+215,Oxfordshire County Council,57.2
+216,Hambleton District Council,48.3
+217,Harlow District Council,43.4
+218,West Dunbartonshire,47.6
+219,Sheffield City Council,30.7
+220,Eastbourne Borough Council,38.9
+221,Fermanagh & Omagh,46.59066518
+222,Braintree District Council,49.5
+223,Mid Sussex District Council,41.8
+224,Slough Borough Council,23.9
+225,Oadby and Wigston Borough Council,45.1
+226,Wirral MBC,33.2
+227,Hertfordshire County Council,50.9
+228,Runnymede Borough Council,43.5
+229,Havering LB,37
+230,County Durham,40
+231,Wandsworth LB,22.1
+232,East Hampshire District Council,34.2
+233,Epping Forest Borough Council,55.2
+234,Northampton Borough Council,39.9
+235,West Lindsey District Council,46
+236,North West Leicestershire District Council,45.9
+237,East Northamptonshire Council,46.6
+238,Merton LB,37
+239,Stratford-on-Avon District Council,60.3
+240,Harrow LB,41
+241,East London Waste Authority,24.8
+242,Rushcliffe Borough Council,50.2
+243,Cornwall,35.4
+244,Selby District Council,41.6
+245,Surrey County Council,54.8
+246,Welwyn Hatfield Council,43.4
+247,Northumberland,36.2
+248,Wigan MBC,48.5
+249,Warwick District Council,52.3
+250,Daventry District Council,51.7
+251,Adur District Council,33.8
+252,Kettering Borough Council,48.8
+253,Folkestone and Hythe District Council,45.3
+254,Chelmsford Borough Council,53
+255,East Devon District Council,54.2
+256,Harborough District Council,47.3
+257,North East Lincolnshire Council,31.8
+258,Wyre Forest District Council,32.8
+259,Barrow-in-Furness Borough Council,19.6
+260,Sefton MBC,36.9
+261,Devon County Council,54
+262,Stevenage Borough Council,38.3
+263,Derry City & Strabane,45.57376585
+264,Derbyshire County Council,48.2
+265,Waverley Borough Council,54.9
+266,Carlisle City Council,41.2
+267,Merthyr Tydfil,62.7
+268,Moray,57.8
+269,Central Bedfordshire,44.9
+270,Antrim & Newtownabbey,56.98147402
+271,East Lindsey District Council,42.1
+272,Aylesbury Vale District Council,54.1
+273,West Lothian,61.3
+274,Blackburn with Darwen Borough Council,30
+275,Middlesbrough Borough Council,33.1
+276,North Somerset Council,57.1
+277,Torbay Council,42.4
+278,Wychavon District Council,43.6
+279,Herefordshire Council,39.8
+280,Kingston-upon-Hull City Council,49.1
+281,Barking and Dagenham LB,25
+282,Nottingham City Council,29.9
+283,Royal Borough of Kensington and Chelsea,26.2
+284,North Yorkshire County Council,44.8
+285,North East Derbyshire District Council,46.6
+286,Powys,60.4
+287,West Berkshire District Council,51.5
+288,Western Riverside Waste Authority,24.2
+289,Portsmouth City Council,24.8
+290,Stroud District Council,61.2
+291,Huntingdonshire District Council,55.8
+292,Tunbridge Wells Borough Council,48.4
+293,Tewkesbury Borough Council,54.5
+294,Northamptonshire County Council,48.1
+295,Horsham District Council,49.8
+296,Blaenau Gwent,56
+297,South Ribble Borough Council,46.5
+298,Glasgow City,26.7
+299,Allerdale Borough Council,34.2
+300,Warwickshire County Council,51.4
+301,Elmbridge Borough Council,52.9
+302,Kirklees MBC,27.2
+303,Wrexham,65.4
+304,Dumfries and Galloway,27.8
+305,Isle of Wight Council,53.4
+306,East Staffordshire Borough Council,43.9
+307,Bristol City Council,44.9
+308,Ryedale District Council,46.2
+309,Falkirk,55.9
+310,Test Valley Borough Council,36
+311,Torfaen,60.6
+312,Mid Ulster,51.05155678
+313,East Ayrshire,52.9
+314,Surrey Heath Borough Council,61.4
+315,Worthing Borough Council,35.8
+316,Coventry City Council,32.9
+317,Walsall MBC,41.3
+318,Rhondda Cynon Taf,61.3
+319,Bromsgrove District Council,43.9
+320,Medway Borough Council,42.8
+321,Bury MBC,51.7
+322,Hertsmere Borough Council,43.6
+323,Nottinghamshire County Council,43.7
+324,Bolton MBC,47.1
+325,Aberdeen City,43.9
+326,Mid & East Antrim,47.45680505
+327,Guildford Borough Council,58.4
+328,Staffordshire Moorlands District Council,56
+329,Winchester City Council,36.1
+330,St Helens MBC,35.9
+331,Uttlesford District Council,48.6
+332,Mid Devon District Council,51.8
+333,Greenwich LB,35.1
+334,Bassetlaw District Council,24.8
+335,Lewes District Council,26.7
+336,Cheshire West and Chester,58.3
+337,Westminster City Council,18.8
+338,Swale Borough Council,41.2
+339,Shetland Islands,8.0
+340,Lancaster City Council,35.6
+341,Stockton-on-Tees Borough Council,24.9
+342,Wakefield City MDC,47.8
+343,Poole Borough Council,51.1
+344,South Staffordshire Council,50.4
+345,Southend-on-Sea Borough Council,47.1
+346,Rugby Borough Council,44.6
+347,Shropshire,54.1
+348,Preston City Council,29.8
+349,Tamworth Borough Council,42.8
+350,Ashfield District Council,40.8
+351,West Lancashire Borough Council,42.9
+352,Norfolk County Council,45.8
+353,Wealden District Council,51.3
+354,Havant Borough Council,30.7
+355,Croydon LB,37.9
+356,Chorley Borough Council,42.7
+357,East Hertfordshire District Council,48.9
+358,Worcestershire County Council,42.9
+359,Argyll and Bute,38.7
+360,South Holland District Council,27.2
+361,Wolverhampton MBC,41.9
+362,Gedling Borough Council,35.2
+363,Flintshire,67.6
+364,Newport,59.8
+365,Bracknell Forest Borough Council,39.2
+366,Lincoln City Council,35.1
+367,Amber Valley Borough Council,32.9
+368,Eastleigh Borough Council,41.6
+369,Birmingham City Council,20.7
+370,Craven District Council,42.5
+371,Hampshire County Council,41.7
+372,South Kesteven District Council,40.9
+373,Hastings Borough Council,29.6
+374,West Sussex County Council,51.3
+375,Buckinghamshire County Council,56.6
+376,Leicester City Council,35.3
+377,Dorset Waste Partnership,59.7
+378,Swansea,63.3
+379,Epsom and Ewell Borough Council,49.9
+380,South Ayrshire,52.5
+381,"Newry, Mourne & Down",45.23819746
+382,East Renfrewshire,67.1
+383,Rutland County Council,57.8
+384,St Edmundsbury Borough Council,41.3
+385,Richmondshire District Council,37.7
+386,Worcester City Council,35.7
+387,Fife,54.7
+388,Boston Borough Council,35.2
+389,Woking Borough Council,57.1
+390,Reigate and Banstead Borough Council,53.9
+391,Sutton LB,50
+392,Lincolnshire County Council,43.5
+393,Forest of Dean District Council,54.2
+394,Bedford,44.5
+395,Wiltshire,44.7
+396,North Lincolnshire Council,48.2
+397,Broxtowe Borough Council,38.5
+398,Brent LB,36.5
+399,Maidstone Borough Council,51.1
+400,Three Rivers District Council,62.4
+401,Salford City Council MBC,45.6
+402,Haringey LB,32.9
+403,Somerset Waste Partnership,52.3
+404,Hillingdon LB,40
+405,Telford and Wrekin Council,43.2
+406,Bradford City MDC (MBC),34.6
+407,Greater Manchester WDA (MBC),47.1
+408,City of Edinburgh,41.0
+409,North Kesteven District Council,43.9
+410,Eden District Council,42.6
